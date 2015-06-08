@@ -1,0 +1,209 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*** HAVE TO HAVE A WIDTH --- becomes total width including your padding and border ****/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+/*
+img{
+	display: none;
+}
+
+
+
+html{
+	font-family: "Helvetica Neue",Helvetica,Arial
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.page_header p{
+	margin-bottom: 0;
+}
+
+.page_header h2{
+	margin-top:2px;
+}
+
+.page_nav ul{
+	display:none;
+}
+
+.categories ul{
+	padding:0;
+}
+.category_heading ul{
+	display:none;
+}
+
+.category_heading a{
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+footer{
+	display: none;
+}
+
+.text{
+	display: none;
+}
+
+.top_rated{
+	display:none;
+}*/
+
+
+
+@media screen and (min-width: 900px){
+	html{
+		font-family: "Helvetica Neue",Helvetica,Arial
+	}
+
+	ul{
+		list-style: none;
+	}
+
+	a{
+		text-decoration: none;
+		color:#333333;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+	
+	.page_header{
+		color:#333333;
+	}
+
+	.page_header p{
+		margin-bottom: 0;
+	}
+
+	.page_header h2{
+		margin-top:2px;
+	}
+/*
+	.main_logo img{
+		display:inline-block;
+		width:50px;
+		float:left;
+	}*/
+
+	header{
+		background:#b62c20;
+	}
+
+	.header_menu a{
+		color:white;
+	}
+	.sign_in{
+		float:left;
+	}
+
+	.top_links{
+		float:left;
+	}
+
+	.menu_dropdown ul li:hover ul{
+        display: block; /* display the dropdown */
+    }
+
+    .page_nav{
+    	width: 14%;
+    	padding:0;
+    	float:left;
+    	margin-left: 1%;
+    	font-weight: bold;
+    	font-size: .8em;
+    }
+    .page_nav h4{
+    	margin: 0;
+    	font-size: 1.4em;
+    }
+
+    .page_nav ul{
+    	padding: 0;
+    }
+
+	.page_nav li{
+		padding: 2px 0;
+	}
+
+	.content_wrapper{
+		width:85%;
+		float: left;
+	}
+
+	.category_heading ul{
+		display:none;
+	}
+
+	.top_content{
+		width: 75%;
+	}
+
+	.top_rated{
+		width: 15%;
+		float:right;
+
+	}
+
+	.top_rated img{
+		width: 50%;
+	}
+
+	
+/*
+	.categories_list{
+		width: 80%;
+		float:left;
+
+	}*/
+
+	.categories_list li{
+		width: 30%;
+		float:left;
+		vertical-align: bottom;
+
+	}
+
+	.categories_list img{
+		display: block;
+		width: 25%;
+		text-align: center;
+	}
+/*
+	.top_rated{
+		width: 10%;
+		float: right;
+	}*/
+
+	.page_two{
+		display: none;
+	}
+
+}
